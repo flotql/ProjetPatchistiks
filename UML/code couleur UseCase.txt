@@ -1,0 +1,3 @@
+"tomate" > pages patchnotes 
+Bleu > Partie compte
+cyan > gestion personnages favori

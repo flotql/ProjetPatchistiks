@@ -4,4 +4,56 @@
     --colorb3:#669ee0;
     --colorm1:#946c26;
     --colorm2:#e0ad53;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Mise en place page */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.milieupage{
+    display: flex;
+        
+}
+
+nav,.center,.right{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.banner{
+    text-align: center;
+}
+
+/* Visu */
+
+nav{
+    background-color: var(--colorm2);
+    border: solid 1px ;
+}
+
+header{
+    background-color: var(--colorb1);
+}
+
+.container{
+    background-color: var(--colorb3);
+}
+
+.center{
+    border: solid 1px;
+}
+
+.right{
+    border: solid 1px;
 }

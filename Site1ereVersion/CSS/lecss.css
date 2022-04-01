@@ -1,16 +1,17 @@
 :root{
-    --colorb1:#356194;
-    --colorb2:#8fc3ff;
-    --colorb3:#669ee0;
-    --colorm1:#946c26;
-    --colorm2:#e0ad53;
+    --:#550011;
+    --darkSienna:#230606;
+    --brandy:#80403A;
+    --indianRed:#CD5C5C;
+    --khakiWeb:#CCB19A;
+    --champagnePink:#fbe4d0;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Base */
 
 body{
-    background-color: var(--colorb2);
+    background-color: var(--champagnePink);
     padding: 0;
     margin: 0;
 }

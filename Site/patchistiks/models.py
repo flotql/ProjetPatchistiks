@@ -49,7 +49,7 @@ class Champions(models.Model):
         return self.championName
 
 class Effect (models.Model):
-    effectText = models.CharField(max_length=300, blank=None)
+    effectText = models.CharField(max_length=300, blank=True)
     effectMake = models.ManyToManyField(Items, through='Make')
     get = models.ManyToManyField(Spell)
 
@@ -84,7 +84,7 @@ class Affect(models.Model):
 
 class Make(models.Model):
     makeText = models.CharField(max_length=500)
-    makeEffect = models.ForeignKey(Effect, on_delete=models.CASCADE)
-    makeItems = models.ForeignKey(Items, on_delete=models.CASCADE)
+    makeEffect = models.ForeignKey(Effect, on_delete=models.CASCADE, null=True)
+    makeItems = models.ForeignKey(Items, on_delete=models.CASCADE, null=True)
     def __str__(self):
         return self.makeText

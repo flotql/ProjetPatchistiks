@@ -9,4 +9,4 @@ from django.utils import timezone
 # from .models import
 
 def home(request):
-    return HttpResponse("Bienvenue sur Patchistiks")
+    return render(request, 'patchistiks/home.html')

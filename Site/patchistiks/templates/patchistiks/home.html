@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/rootCss.css' %}">
+    <title>Home</title>
+</head>
+
+<body>
+    {% block contenue %}
+    <header class="offcanvas-menu">
+	<input type="checkbox" id="toogle-menu" />
+
+	<label for="toogle-menu" class="toogle-open"><span></span></label>
+    <nav>
+            <div>
+                <a href="#"> <i class="fab fa-css3-alt"></i>offcanvas </a>
+                <label for="toogle-menu" class="toogle-close">
+                    <span></span>
+                </label>
+            </div>
+            <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">Champions </a></li>
+                <li><a href="#">Items </a></li>
+                <li><a href="#">Research </a></li>
+                <li><a href="#">Profil </a></li>
+                <li><a href="#">D </a></li>
+            </ul>
+        </nav>
+    <script src="{% static 'patchistiks/navJs.js' %}"></script>
+    {% endblock %}
+</body>
+
+</html>

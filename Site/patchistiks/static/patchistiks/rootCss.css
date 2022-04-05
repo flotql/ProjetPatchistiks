@@ -1,0 +1,14 @@
+:root{
+    --:#550011;
+    --darkSienna:#230606;
+    --brandy:#80403A;
+    --indianRed:#CD5C5C;
+    --khakiWeb:#CCB19A;
+    --champagnePink:#fbe4d0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--champagnePink)
+}
+

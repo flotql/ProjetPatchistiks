@@ -1,0 +1,12 @@
+{% extends "pathistiks/home.html" %}
+{% load static %}
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/navBar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/rootCss.css' %}">
+    {% endblock %}
+{% block content%}
+<div>
+    <p>Identifiant ou mot de passe incorrect</p>
+    <a href="{% url 'patchistiks:login' %}">Login</a>
+</div>
+{%endblock%}

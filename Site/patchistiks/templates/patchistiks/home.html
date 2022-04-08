@@ -4,34 +4,58 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/navBar.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/rootCss.css' %}">
     <title>Home</title>
 </head>
 
 <body>
-    {% block contenue %}
-    <header class="offcanvas-menu">
-	<input type="checkbox" id="toogle-menu" />
-
-	<label for="toogle-menu" class="toogle-open"><span></span></label>
-    <nav>
+    <header class="sidebarMenu">
+        <input type="checkbox" id="toogle-menu" />
+        <label for="toogle-menu"><span></span></label>
+        <nav>
             <div>
-                <a href="#"> <i class="fab fa-css3-alt"></i>offcanvas </a>
+                <a href="#">Patchistiks</a>
                 <label for="toogle-menu" class="toogle-close">
                     <span></span>
                 </label>
             </div>
             <ul>
+                <li>
+                    <form  role="search">
+                        <label for="search" id="leLabel"></label>
+                        <input id="search" type="search" placeholder="Search..." autofocus required />
+                        <button type="submit">Go</button>
+                    </form>
+                </li>
                 <li><a href="#">Home </a></li>
+                <li><a href="#">Patch </a></li>
                 <li><a href="#">Champions </a></li>
                 <li><a href="#">Items </a></li>
-                <li><a href="#">Research </a></li>
-                <li><a href="#">Profil </a></li>
-                <li><a href="#">D </a></li>
+                {% if request.user.is_authenticated %}
+                <li><a href="{% url 'patchistiks:profile' %}">Profile </a></li>
+                <li><a href="#">Logout </a></li>
+                {% else %}
+                <li><a href="{% url 'patchistiks:login' %}">Login </a></li>
+                <li><a href="#">Register </a></li>
+                {% endif %}
             </ul>
-        </nav>
-    <script src="{% static 'patchistiks/navJs.js' %}"></script>
-    {% endblock %}
+            </nav>
+    </header>
+    <button class="openButton" id="logButton">Log in</button>
+    <dialog class="loginButton">
+        <button class="closeButton">Close</button>
+        <form id="login" method="post" action="{% url 'patchistiks:home' %}">
+        {% csrf_token %}
+            <h2>Log in</h2>
+            <div class="InputLog">
+                <label for="username">Username</label>
+                <input id="username" name="username">
+                <label for="password">Password</label>
+                <input id="password" name="password">
+            </div>
+        </form>
+    </dialog>
 </body>
-
+<script src="{% static 'patchistiks/loginPopUp.js' %}"></script>
 </html>

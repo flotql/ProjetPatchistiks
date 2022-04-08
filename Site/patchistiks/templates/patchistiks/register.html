@@ -1,0 +1,21 @@
+{% extends "patchistiks/home.html" %}
+{% load static %}
+    {% block css_maybe %}
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/navBar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/rootCss.css' %}">
+    {% endblock %}
+{% block content %}
+<div class="signIn">
+<form id="register" action="{% url 'patchistiks:registered' %}" method="post">
+    <h2>Inscription</h2>
+    {% csrf_token %}
+    <div class="monInput">
+        <input id="username" name="username" placeholder="Nom">
+        <input id="user_firstname" name="user_firstname" placeholder="Prénom">
+        <input id="user_email" name="user_email" placeholder="E-mail">
+        <input type="password" id="user_pwd" name="user_pwd" placeholder="Mot de passe">
+    </div>
+    <a href="{% url 'patchistiks:registered' %}"><input class="RegisterButton" type="submit" value="Register"></a>
+</form>
+</div>
+{% endblock %}

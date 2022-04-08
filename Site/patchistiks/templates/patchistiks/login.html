@@ -1,0 +1,18 @@
+{% extends "patchistiks/home.html" %}
+{% load static %}
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/navBar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'patchistiks/rootCss.css' %}">
+    {% endblock %}
+{% block content %}
+<form id="login" method="post" action="{% url 'patchistiks:home' %}">
+    {% csrf_token %}
+    <h2>Connexion</h2>
+    <div class="InputLog">
+        <label for="username">Username</label>
+        <input id="username" name="username">
+        <label for="password">Password</label>
+        <input id="password" name="password">
+    </div>
+    <a href="{% url 'patchistiks:home' %}"><input class="loginButton"type="submit" value="Log in"></a>
+</form>

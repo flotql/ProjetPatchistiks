@@ -1,14 +1,37 @@
 :root{
-    --:#550011;
+    --rosewood:#550011;
     --darkSienna:#230606;
-    --brandy:#80403A;
+    --brandy:#80403;
     --indianRed:#CD5C5C;
     --khakiWeb:#CCB19A;
-    --champagnePink:#fbe4d0;
+    --almond:#fbe4d0;
+    --seaGreen:#318F57;
     font-family: 'Montserrat', sans-serif;
 }
 
 body{
-    background-color: var(--champagnePink)
+    background-color: var(--almond);
 }
 
+#logButton{
+    display:block;
+    border:1;
+    background:red;
+}
+
+dialog{
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+}
+
+dialog button{
+    display:block;
+    background:blue;
+}
+
+.InputLog{
+    display:flex;
+    flex-direction:column;
+    padding-top:1rem;
+}

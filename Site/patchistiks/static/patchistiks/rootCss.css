@@ -178,6 +178,7 @@ li{
     color: var(--fontNav);
     display: block;
 }
+
 .sidebarMenu nav ul li a:hover{
     text-shadow: none;
     color:whitesmoke;

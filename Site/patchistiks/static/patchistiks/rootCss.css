@@ -115,7 +115,7 @@ li{
     position: absolute;
     height: 4px;
     width: 40px;
-    background: #b3b3b3;
+    background: whitesmoke;
 }
 .sidebarMenu label span::before {
     transform: translateY(-12px);
@@ -167,7 +167,7 @@ li{
 .sidebarMenu nav div label span,
 .sidebarMenu nav div label span:before,
 .sidebarMenu nav div label span:after {
-    background: #4d4d4d;
+    background: whitesmoke;
 }
 
 
@@ -180,12 +180,12 @@ li{
 }
 .sidebarMenu nav ul li a:hover{
     text-shadow: none;
-    color:var(--seaGreen);
+    color:whitesmoke;
 }
 .sidebarMenu nav ul li:hover {
     animation: hover 0.5s;
     background-color: rgba(220,220,220,0.5);
-    border-color:var(--seaGreen);
+    border-color:whitesmoke;
 }
 .sidebarMenu input[type=checkbox] {
     display: none;

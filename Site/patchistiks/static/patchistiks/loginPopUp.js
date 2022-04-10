@@ -6,6 +6,6 @@ openPopup.addEventListener("click", () => {
     popup.showModal();
 });
 
-closePopup.addEventListener("click", () => {
+closePopup.addEventListener('click', () =>{
     popup.close();
-});
+})

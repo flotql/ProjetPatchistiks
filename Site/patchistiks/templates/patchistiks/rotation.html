@@ -1,0 +1,21 @@
+{% extends "patchistiks/home.html" %}
+{% load static %}
+{% block rotation %}
+<div class="freeRotation">
+    <div class="index_title">Free rotation this week</div>
+
+    {%if champions %}
+    <div class="championsList">
+        <ul>
+            {% for data in champions %}
+                <li>
+                    {{ data.id }}
+                </li>
+            {%endfor%}
+        </ul>
+    </div>
+    {%else%}
+        <p>No free champions available noobs (JK i'm just doing sh*t rn)</p>
+    {%endif%}
+</div>
+{% endblock %}

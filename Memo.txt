@@ -3,4 +3,16 @@ css -> https://codepen.io/team/css-tricks/pen/gOXMLLY?editors=1100 (voir d'autre
  
 django -> url
        -> views
-...
+
+
+admin ajout maj db api -> https://docs.djangoproject.com/fr/4.1/intro/tutorial07/ 
+
+
+
+recup info api -> https://dev.to/yahaya_hk/how-to-populate-your-database-with-data-from-an-external-api-in-django-398i
+                  https://www.nylas.com/blog/use-python-requests-module-rest-apis/
+                  https://developer.riotgames.com/
+                  https://darkintaqt.com/blog/league-champ-id-list/
+
+Finir les pages html css (bootstrap,)
+Finir les views url

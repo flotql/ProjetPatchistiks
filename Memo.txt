@@ -16,3 +16,10 @@ recup info api -> https://dev.to/yahaya_hk/how-to-populate-your-database-with-da
 
 Finir les pages html css (bootstrap,)
 Finir les views url
+
+
+
+
+DIAPO -> numérote les pages
+      -> pas de code en noir
+      -> faire une video de la fonctionnalité en plus  du code (pour montrer le fonctionnement)

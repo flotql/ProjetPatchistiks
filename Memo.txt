@@ -17,7 +17,7 @@ recup info api -> https://dev.to/yahaya_hk/how-to-populate-your-database-with-da
 Finir les pages html css (bootstrap,)
 Finir les views url
 
-
+finir le figma et modif les mcd mld diag act toussa toussa
 
 
 DIAPO -> numérote les pages
